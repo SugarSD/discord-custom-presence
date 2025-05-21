@@ -87,7 +87,7 @@ impl App {
         ];
         column![
             text_input("Primary image URL/Asset name...", &*self.main_image_url)
-            .on_input(Message::MainImageChanged),
+            .on_input(Message::MainImageChanged), 
             text_input("Primary activity text...", &*self.activity_main_text)
             .on_input(Message::MainTextChanged),
             text_input("Secondary activity text...", &*self.activity_secondary_text)
